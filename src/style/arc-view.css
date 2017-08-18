@@ -1,0 +1,234 @@
+.arc-view {
+  height: 450px;
+  width: 90%;
+  position: relative;
+  left: 5%;
+  margin-top: 3rem;
+  border: 1px solid #d9d9d9;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+.svg-display{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+}
+.container-buttons-scale{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  order: 1;
+}
+.container-button-zoom-in,
+.container-button-zoom-out,
+.container-button-pan,
+.container-button-zoom-in-active,
+.container-button-zoom-out-active,
+.container-button-pan-active, 
+.container-button-auto-scale {
+  height: 40px;
+  width: 20%;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #4c4c4c;
+  outline: none;
+  background: none;
+  border: none;
+}
+.button-zoom-in,
+.button-zoom-out,
+.button-zoom-in-active,
+.button-zoom-out-active {
+  height: 30px;
+  width: 30px; 
+}
+.button-pan,
+.button-pan-active,
+.button-auto-scale {
+  height: 25px;
+  width: 25px;
+  fill: #505050;
+}
+.button-pan-active {
+  fill: #F44336;
+}
+.container-button-zoom-in-active,
+.container-button-zoom-out-active,
+.container-button-pan-active {
+  fill: #F44336;
+}
+
+.viewbox-info {
+  height: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  order: 2;
+  color: #505050;
+  font-size: 0.875rem;
+}
+.default-cursor {
+  cursor: default;
+}
+.zoom-in-cursor {
+  cursor: zoom-in;
+}
+.zoom-out-cursor {
+  cursor: zoom-out;
+}
+.grab-cursor {
+  cursor: grab;
+}
+.grabbing-cursor {
+  cursor: grabbing;
+}
+.figure-svg-path {
+  stroke: #262626;
+  stroke-width: 2px;
+  fill: #4CAF50;
+}
+.stroke-svg-path {
+  stroke: #262626;
+  stroke-width: 3px;
+  fill: none
+}
+@media screen and (min-width: 768px) {
+  .arc-view {
+      height: 400px;
+    }
+  .container-buttons-scale{
+      height: 40%;
+      width: 40px;
+      position: absolute;
+      top: 30%;
+      flex-direction: column;
+      justify-content: space-between;
+      
+    }
+    .container-button-zoom-in,
+    .container-button-zoom-out,
+    .container-button-pan,
+    .container-button-zoom-in-active,
+    .container-button-zoom-out-active,
+    .container-button-pan-active, 
+    .container-button-auto-scale {
+      height: 40px;
+      width: 40px;
+    }
+    .button-zoom-in,
+    .button-zoom-out,
+    .button-zoom-in-active,
+    .button-zoom-out-active {
+      height: 24px;
+      width: 24px; 
+    }
+    .button-pan,
+    .button-pan-active,
+    .button-auto-scale {
+      height: 20px;
+      width: 20px;
+    }
+    .button-zoom-in:hover,
+    .button-zoom-out:hover,
+    .button-pan:hover,
+    .button-auto-scale:hover {
+      fill: #8d8d8d;
+    }
+    .viewbox-info {
+      height: 15%;
+      width: 20%;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .arc-view {
+      height: 350px;
+      border: 2px solid #d9d9d9;
+      justify-content: flex-end;
+    }
+    .button-zoom-in,
+    .button-zoom-out,
+    .button-zoom-in-active,
+    .button-zoom-out-active {
+      height: 24px;
+      width: 24px; 
+    }
+    .button-pan,
+    .button-pan-active,
+    .button-auto-scale {
+      height: 20px;
+      width: 20px;
+    }
+    .button-zoom-in:hover,
+    .button-zoom-out:hover,
+    .button-pan:hover,
+    .button-auto-scale:hover {
+      fill: #8d8d8d;
+    }
+    .viewbox-info {
+      font-size: 0.875rem;
+    }
+  
+}
+@media screen and (min-width: 1900px) {
+  .arc-view {
+      height: 480px;
+    }
+  .container-buttons-scale{
+      height: 50%;
+      width: 60px;
+      top: 25%;
+    }
+  .container-button-zoom-in,
+    .container-button-zoom-out,
+    .container-button-pan,
+    .container-button-zoom-in-active,
+    .container-button-zoom-out-active,
+    .container-button-pan-active, 
+    .container-button-auto-scale {
+      height: 60px;
+      width: 60px;
+    }
+    .button-zoom-in,
+    .button-zoom-out,
+    .button-zoom-in-active,
+    .button-zoom-out-active {
+      height: 40px;
+      width: 40px; 
+    }
+    .button-pan,
+    .button-pan-active,
+    .button-auto-scale {
+      height: 30px;
+      width: 30px;
+    }
+    .viewbox-info {
+      top: 15px;
+      left: 15px;
+    }
+}
+
+
+
+
+

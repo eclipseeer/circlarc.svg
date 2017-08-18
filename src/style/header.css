@@ -1,0 +1,105 @@
+.app-header {
+  width: 100%;
+  height: 5.625rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  user-select: none;
+  cursor: default;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%
+}
+.logo-icon {
+  height: 35px;
+  width: 35px;
+  fill: none;
+  stroke: #262626;
+  stroke-width: 12px;
+}
+.logo-text {
+  font-size: 1rem;
+  letter-spacing : 1px;
+}
+.app-header a {
+  margin-right: 5%;
+  color: inherit;
+  text-decoration-line: none;
+  font-size: 1.125rem;
+  letter-spacing : 1px;
+}
+.app-header a:hover {
+  color: #8d8d8d;
+} 
+.main-text {
+  width: 90%;
+  position: relative;
+  left: 5%;
+  margin-top: 10%;
+  line-height: 1.9rem;
+  font-size: 1.125rem;
+}
+.main-text h1 {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: 500;
+}
+.main-text p {
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .logo-icon {
+      height: 50px;
+      width: 50px;
+      margin-top: 5px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .logo-text {
+      font-size: 1.375rem;
+      letter-spacing : 3px;
+    }
+    .app-header a {
+      margin-right: 5%;
+      font-size: 1rem;
+      letter-spacing : 1px;
+    }
+    .main-text {
+      width: 60%;
+      left: 20%;
+      margin-top: 10%;
+      line-height: 2.5rem;
+      font-size: 1.375rem;
+    }
+    .main-text h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

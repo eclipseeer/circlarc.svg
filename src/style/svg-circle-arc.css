@@ -1,0 +1,35 @@
+.svg-circle-arc {
+  width: 95%;
+  position: relative;
+  left: 2.5%;
+  margin-top: 10%;
+}
+.stroke-icon,
+.figure-icon {
+  fill: none!important;
+  stroke-width: 1px;
+}
+.arc-container {
+  width: 100%;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .svg-circle-arc {
+    width: 80%;
+    left: 10%;
+  }
+  .stroke-icon,
+  .figure-icon {
+    stroke-width: 2px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .tabs div button {
+    font-size: 19px!important;
+  }
+  .stroke-icon,
+  .figure-icon {
+    height: 36px !important;
+    width: 36px !important;
+  }
+}

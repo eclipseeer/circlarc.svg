@@ -1,0 +1,24 @@
+.app-footer {
+  width: 100%;
+  padding: 3rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  letter-spacing : 1px;
+}
+.app-footer a {
+  color: inherit;
+  text-decoration-line: none;
+  margin-left: 5px;
+}
+.app-footer a:hover {
+  color: #8d8d8d;
+}
+
+@media screen and (min-width: 1024px) {
+  .app-footer {
+     padding: 3rem 0 1rem 0;
+  }
+  
+}
